@@ -1,3 +1,3 @@
 # DailyProgrammer
 
-A repository for attempts to solve challenges at https://www.reddit.com/r/dailyprogrammer/wiki/challenges
+A repository for attempts to solve challenges at r/dailyprogrammer/wiki/challenges
