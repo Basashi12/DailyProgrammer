@@ -35,6 +35,8 @@ def add_event():
             raise ValueError
         else:
             continue
+    else:
+        continue
     global events
     events.append([V, t])
 
