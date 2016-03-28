@@ -29,16 +29,11 @@ def add_event():
     # Adds event to calendar, must be integer
     V = input('Please enter an event description: ')
     t = input('Please enter at what hour the event takes place: ')
-    if t != int:
-        t = input('Please enter an integer: ')
-        if t != int or t > 23 or t < 0:
-            raise ValueError
-        else:
-            continue
+    if t != int or t > 23 or t < 0:
+        raise ValueError
     else:
-        continue
-    global events
-    events.append([V, t])
+        global events
+        events.append([V, t])
 
 def delete_event():
     # Delets event from calendar, using event name as key
