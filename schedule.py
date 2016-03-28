@@ -49,7 +49,7 @@ list_event():
         print('Event: {0} \n Time: {1}'.format(e[0], e[1]))
 
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     main()
 
 
