@@ -9,10 +9,10 @@ def main():
 events = {} # a dict
 
 init_schedule():
-    question = input('What would you like to do? /n Input a to add an event
+    question = input('''What would you like to do? /n Input a to add an event
                 /n Input d to delete an event
                 /n Input l to list events
-                /n Input q to quit')
+                /n Input q to quit''')
     if question == 'a':
         add_event()
     elif question == 'd':
