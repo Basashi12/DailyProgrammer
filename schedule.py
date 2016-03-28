@@ -8,7 +8,7 @@ def main():
 
 events = {} # a dict
 
-init_schedule():
+def init_schedule():
     question = input('''What would you like to do? /n Input a to add an event
                 /n Input d to delete an event
                 /n Input l to list events
@@ -25,7 +25,7 @@ init_schedule():
         print('Not a valid response')
         init_schedule()
 
-add_event():
+def add_event():
     # Adds event to calendar, must be integer
     V = input('Please enter an event description: ')
     t = input('Please enter at what hour the event takes place: ')
@@ -38,13 +38,13 @@ add_event():
     global events
     events.append([V, t])
 
-delete_event():
+def delete_event():
     # Delets event from calendar, using event name as key
     V = input('Please enter which event you would like to delete: ')
     global events
     events.pop(keys=V)
 
-list_event():
+def list_event():
     # Prints out all events saved into global events dict
     global events
     events.sort()
