@@ -1,3 +1,6 @@
+# Challenge from:
+# https://www.reddit.com/r/dailyprogrammer/comments/pihtx/intermediate_challenge_1/
+
 import sys
 
 def main():
