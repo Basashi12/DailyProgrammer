@@ -20,7 +20,7 @@ def get_input():
     sales = input('Enter sales/revenue figure for this FY: ')
     calculate()
 
-calculate():
+def calculate():
     choice = input('What ratio would you like to compute?\n(1) PER, (2) PBR, or (3) PS?')
 
     if choice == '1' or 'PER':
