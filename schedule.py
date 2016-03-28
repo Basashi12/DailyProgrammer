@@ -6,13 +6,12 @@ import sys
 def main():
     pass
 
-events = {} # a dict
-
 def init_schedule():
-    question = input('''What would you like to do? /n Input a to add an event
-                /n Input d to delete an event
-                /n Input l to list events
-                /n Input q to quit''')
+    events = {}
+    question = input('''What would you like to do?\nInput a to add an event
+                \nInput d to delete an event
+                \nInput l to list events
+                \nInput q to quit\n''')
     if question == 'a':
         add_event()
     elif question == 'd':
@@ -28,18 +27,24 @@ def init_schedule():
 def add_event():
     # Adds event to calendar, must be integer
     V = input('Please enter an event description: ')
-    t = input('Please enter at what hour the event takes place: ')
-    if t != int or t > 23 or t < 0:
+    t = int(input('Please enter the hour at which the event takes place: '))
+    if t < 0:
         raise ValueError
+        init_schedule()
+    elif t > 23:
+        raise ValueError
+        init_schedule()
     else:
         global events
-        events.append([V, t])
+        events[t] = V
+    init_schedule()
 
 def delete_event():
-    # Delets event from calendar, using event name as key
+    # Deletes event from calendar, using event name as key
     V = input('Please enter which event you would like to delete: ')
     global events
-    events.pop(keys=V)
+    del events[value=V]
+    init_schedule()
 
 def list_event():
     # Prints out all events saved into global events dict
@@ -47,6 +52,7 @@ def list_event():
     events.sort()
     for e in events:
         print('Event: {0} \n Time: {1}'.format(e[0], e[1]))
+    init_schedule()
 
 
 if __name__ == '__main__':
