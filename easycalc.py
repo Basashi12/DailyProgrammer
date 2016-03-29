@@ -2,7 +2,7 @@
 # let's calculate financial ratios
 
 def main():
-	pass
+    pass
 
 def PBR(marketcap, bv):
     return marketcap / bv
@@ -14,24 +14,25 @@ def PS(marketcap, sales):
     return marketcap / sales
 
 def get_input():
-    marketcap = input('Enter market capitalization of the firm you would like to analyze: ')
-    earnings = input('Enter an estimate for net profit this year: ')
-    bv = input('Enter the book value of the firm: ')
-    sales = input('Enter sales/revenue figure for this FY: ')
-    calculate()
+    global MC, EE, BOOK, REV
+    MC = int(input('Enter market capitalization of the firm you would like to analyze: '))
+    EE = int(input('Enter an estimate for net profit this year: '))
+    BOOK = int(input('Enter the book value of the firm: '))
+    REV = int(input('Enter sales/revenue figure for this FY: '))
+    calc()
 
-def calculate():
-    choice = input('What ratio would you like to compute?\n(1) PER, (2) PBR, or (3) PS?')
+def calc():
+    choice = input('What ratio would you like to compute?\n(1) PER, (2) PBR, or (3) PS? ')
 
-    if choice == '1' or 'PER':
-        print(PER(marketcap, earnings))
-    elif choice == '2' or 'PBR':
-        print(PBR(marketcap, bv))
-    elif choice == '3' or 'PS':
-        print(PS(marketcap, sales))
+    if choice == '1' or choice == 'PER':  # if/elif statements need separate 'or' - cannot say choice == '1' or 'PER'
+        print('Price earnings ratio is: ', PER(MC, EE))
+    elif choice == '2' or choice == 'PBR':
+        print('Price to book ratio is: ', PBR(MC, BOOK))
+    elif choice == '3' or choice == 'PS':
+        print('Price to sales ratio is: ', PS(MC, REV))
     else:
         print('Invalid input')
-        calculate()
+        calc()
 
 if __name__ == '__main__':
     get_input()
