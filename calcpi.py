@@ -1,6 +1,7 @@
 # Challenge no 6 easy
 
-import decimal, math
+import math
+from decimal import *
 
 def main():
     pass
@@ -10,19 +11,21 @@ def prec(n):
     decimal.getcontext().prec = n+5
     
 def calc_pi(n):
+    pi100 = Decimal(3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679)
     # calculating pi to an accuracy of n decimal places
-    delta = math.pow(10,-n)
-    actualpi = 4 * (4 * (math.atan(1/5)) - (math.atan(1/239)))
+    delta = Decimal(.64 * math.pow(10,-(n+1)))
     arctan = 0 # initializing variables
     i = 0
     pie = 0
-    while abs(actualpi - pie) > delta:
-        term = math.pow(-1, i) / (2 * (i - 1) + 1)
-        arctan += term
-        pie = 4 * arctan
+    while abs(Decimal(pi100 - pie)) > delta:
+        term = Decimal(math.pow(-1, i)) / Decimal((2 * i) + 1)
+        arctan += Decimal(term)
+        pie = Decimal(4 * arctan)
         i += 1
+        if i % 1000000 ==0:
+            print(i, pie)
     print('After {} iterations, computed pi to {}th decimal precision.'.format(i, n))
     print(pie)
-        
+
 if __name__ == '__main__':
     main()
