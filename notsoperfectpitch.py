@@ -1,11 +1,17 @@
 # Challenge # 12 Difficult
 
-import winsound
+import winsound, time
 
 def main():
     pass
 
 def instrument():
+    winsound.Beep(262, 1740)
+    winsound.Beep(392, 1740)
+    winsound.Beep(523, 3045)
+    time.sleep(0.225)
+    winsound.Beep(659,218)
+    winsound.Beep(622, 3480)
     note = input('Which note should I play? ').upper()
     duration = int(input('How many miliseconds should the note be played? '))
     if note == 'A' or note == 'LA':
