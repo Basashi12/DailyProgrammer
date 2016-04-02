@@ -5,7 +5,7 @@ import math
 def main():
     pass
 
-def factoring(num):
+ def factoring(num):
     onum = num
     factors = []
     ceil = math.floor(num / 2)
@@ -15,9 +15,13 @@ def factoring(num):
             factors.append(i)
             num = (num/i)
             i = i
+            print('Printing {}'.format(i))
         else:
             i += 1
-    print('{} are the factors of {}'.format(factors, onum))
+    if factors == True:
+        print('{} are the factors of {}.'.format(factors, onum))
+    else:        
+        print('{} is prime!'.format(onum))
 
 if __name__ == '__main__':
     main()
