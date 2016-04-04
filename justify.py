@@ -1,5 +1,7 @@
 # Challenge 15 Easy
 
+# Somehow could not get ljust to work.  Used lstrip instead.
+
 def main():
     pass
 
@@ -11,8 +13,7 @@ def justify(text):
         with open(text, 'r') as readfile:
             with open('Output.txt', 'w') as writefile:
                 for line in readfile:
-                    newline = line.ljust(maxlen)    # somehow Ljust won't work
-                    writefile.write(newline)
+                    writefile.write(line.lstrip())
     elif side == 'R':
         with open(text, 'r') as readfile:
             with open('Output.txt', 'w') as writefile:
