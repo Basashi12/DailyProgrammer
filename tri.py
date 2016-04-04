@@ -1,3 +1,5 @@
+# Challenge 17 Easy
+
 def tri(h):
     option = input('Would you like the triangle (n)ormal, (u)pside down, or (r)ight justified? ')
     if option.lower() == 'n':
