@@ -1,3 +1,6 @@
+# Challenge 28 Intermediate
+# https://www.reddit.com/r/dailyprogrammer/comments/r59e6/3202012_challenge_28_intermediate/
+
 def tetra(n):
     t = 0
     i = 1
