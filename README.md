@@ -2,4 +2,4 @@ DailyProgrammer
 
 A repository for attempts to solve various challenges at r/dailyprogrammer/wiki/challenges
 
-Coding in Python 3.5 using iPython Jupyter QtConsole, gVim 7.4, Windows 10
+Coding in Python 3.5 using iPython Jupyter QtConsole, gVim 7.4
