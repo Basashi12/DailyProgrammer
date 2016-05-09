@@ -1,5 +1,7 @@
 # Challenge 27 Easy
 # https://www.reddit.com/r/dailyprogrammer/comments/r0r3h/3172012_challenge_27_easy/
+# Accepts a year as input and outputs the century the year belongs
+# and whether or not the year is a leap year. 
 
 def century():
     n = int(input('Enter year: '))
