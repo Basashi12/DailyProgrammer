@@ -27,7 +27,7 @@ def find_anagrams(wordlist):
             elif sorted(w) != sorted(z): # filtering out words composed of different letters
                 continue
             elif w == z: # deleting same words - will happen once per loop
-                WL2.remove(w)
+                continue
             else:
                 anagrams.extend([w, z]) # adding all other words
     anagrams = str(set(anagrams)) # remvoving duplicate words - not sure if necessary
