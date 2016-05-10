@@ -19,9 +19,8 @@ def read_words():
 
 def find_anagrams(wordlist):
     anagrams = []
-    WL2 = wordlist
     for w in wordlist:
-        for z in WL2:
+        for z in wordlist:
             if len(w) != len(z): # filtering out words with diff len
                 continue
             elif sorted(w) != sorted(z): # filtering out words composed of different letters
