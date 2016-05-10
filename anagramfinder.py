@@ -19,6 +19,7 @@ def read_words():
 
 def find_anagrams(wordlist):
     anagrams = []
+    wl = list(set(wordlist))
     for w in wordlist:
         for z in wordlist:
             if len(w) != len(z): # filtering out words with diff len
@@ -29,7 +30,7 @@ def find_anagrams(wordlist):
                 continue
             else:
                 anagrams.extend([w, z]) # adding all other words
-    anagrams = str(set(anagrams)) # remvoving duplicate words - not sure if necessary
+    anagrams = list(set(anagrams)) # remvoving duplicate words - not sure if necessary
     print(len(anagrams)) #generates a weird number
     print(anagrams)
 
