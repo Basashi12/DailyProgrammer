@@ -1,4 +1,6 @@
 # Challenge No 5 medium
+# https://www.reddit.com/r/dailyprogrammer/comments/pnhtj/2132012_challenge_5_intermediate/
+# write a program that can find the amount of anagrams within a .txt file
 
 
 def main():
