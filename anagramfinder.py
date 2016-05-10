@@ -11,7 +11,7 @@ def read_words():
     global wordlist
     wordlist = []
     tf = open(fname)
-    for word in tf.read().split():
+    for word in tf.read().split().lower():
         wordlist.append(word)
     wordlist = list(set(wordlist)) # removes duplicates
     return wordlist
