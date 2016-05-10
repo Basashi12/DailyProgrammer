@@ -1,4 +1,6 @@
 # Challenge No 9 Intermediate
+# https://www.reddit.com/r/dailyprogrammer/comments/pu1y6/2172012_challenge_9_intermediate/
+# Take a string, scan file for string, and replace with another string
 
 def main():
     pass
