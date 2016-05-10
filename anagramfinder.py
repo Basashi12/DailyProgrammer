@@ -7,7 +7,9 @@ def main():
     pass
 
 def read_words():
+    # function to read in file - os.chdir() for correct dir
     fname = input('filename: ')
+    # wordlist will be used by find_anagrams
     global wordlist
     wordlist = []
     tf = open(fname)
@@ -15,11 +17,9 @@ def read_words():
         wordlist.append(word.lower())
     wordlist = list(set(wordlist)) # removes duplicates
     return wordlist
-    find_anagrams(wordlist)
-
+    
 def find_anagrams(wordlist):
     anagrams = []
-    wl = list(set(wordlist))
     for w in wordlist:
         for z in wordlist:
             if len(w) != len(z): # filtering out words with diff len
