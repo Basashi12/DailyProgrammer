@@ -9,7 +9,7 @@ def main():
     bi(num)
 
 def bi(n):
-    # bin outputs '0b', need to truncate
+    # bin outputs prefix '0b', need to truncate
     print(str(bin(n))[2:])
 
 if __name__ == '__main__':
