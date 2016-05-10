@@ -16,7 +16,6 @@ def read_words():
     for word in tf.read().split():
         wordlist.append(word.lower())
     wordlist = list(set(wordlist)) # removes duplicates
-    return wordlist
     
 def find_anagrams(wordlist):
     anagrams = []
