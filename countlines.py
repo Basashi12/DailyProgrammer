@@ -9,5 +9,5 @@ def count(filename):
     lcount = 0
     wcount = 0
     for line in open(filename).readlines(): lcount += 1
-    for words in open(filename).read().split(): wount += 1
+    for words in open(filename).read().split(): wcount += 1
     return lcount, wcount
