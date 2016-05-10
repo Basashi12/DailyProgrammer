@@ -7,9 +7,10 @@ def main():
     pass
 
 def read_words():
+    fname = input('filename: ')
     global wordlist
     wordlist = []
-    tf = open('cav.txt')
+    tf = open(fname)
     for word in tf.read().split():
         wordlist.append(word)
     wordlist = list(set(wordlist)) # removes duplicates
