@@ -19,7 +19,7 @@ def factoring(num):
             print('Printing {}'.format(i))
         else:
             i += 1
-    if factors == True:
+    if factors:
         print('{} are the factors of {}.'.format(factors, onum))
     else:        
         print('{} is prime!'.format(onum))
