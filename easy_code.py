@@ -9,7 +9,7 @@ def main():
 def start():
     print('Welcome to the not so secret coder, using a basic Casesar Cipher.')
     print('Would you like to encode or decode a message?')
-    ri = input('Enter E to encode and D to decode: ')
+    ri = input('Enter E to encode and D to decode: ').upper()
     if ri == 'E':
         encode()
     elif ri == 'D':
