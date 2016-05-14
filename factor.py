@@ -16,7 +16,6 @@ def factoring(num):
         else:
             factors.append(i)
             num = (num/i)
-            print('Printing {}'.format(i))
     if factors:
         print('{} are the factors of {}.'.format(factors, onum))
     else:        
