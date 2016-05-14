@@ -9,16 +9,14 @@ def main():
 def factoring(num):
     onum = num
     factors = []
-    ceil = math.floor(num / 2)
     i = 2
-    for i in range(2, ceil+1):
-        if num % i == 0:
+    while i**2 <= onum:
+        if num % i:
+            i += 1
+        else:
             factors.append(i)
             num = (num/i)
-            i = i
             print('Printing {}'.format(i))
-        else:
-            i += 1
     if factors:
         print('{} are the factors of {}.'.format(factors, onum))
     else:        
