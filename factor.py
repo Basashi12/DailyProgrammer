@@ -10,7 +10,7 @@ def factoring(num):
     onum = num
     factors = []
     i = 2
-    while i**2 <= onum//2:
+    while i <= onum//2:
         if num % i:
             i += 1
         else:
