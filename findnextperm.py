@@ -1,7 +1,8 @@
 # Challenge 21 Easy
+# https://www.reddit.com/r/dailyprogrammer/comments/qp3ub/392012_challenge_21_easy/
+# Input: a number
+# Output : the next higher number that uses the same set of digits.
 
-# Had a bit of a challenge in making this work for
-# numbers which had duplicate digits
 
 # If there are duplicate digits, nums contains same number, same index combos
 
@@ -15,3 +16,5 @@ def findnextperm(n):
     snums = list(sorted(set(nums))) # set gets rid of duplicates
     place = snums.index(int(num))
     print(snums[place+1])
+
+# A challenge in making this work for# numbers w/ duplicate digits
