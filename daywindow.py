@@ -1,12 +1,16 @@
 # Challenge 11 Easy
+# https://www.reddit.com/r/dailyprogrammer/comments/pwons/2192012_challenge_11_easy/
+# Takes year, month, and date as inputs
+# Returns what day of the week that falls on
 
 import calendar
 
 def main():
     pass
 
+# Python has a built in calendar module
 def day():
-    print('Please input what date you would like to know the day for: ')
+    print('Please input what date you would like to know the day of the week for: ')
     year = int(input('Please input a year in 4 digits: '))
     month = int(input('Please input which month: '))
     date = int(input('Please input which date: '))
