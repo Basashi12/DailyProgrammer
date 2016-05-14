@@ -1,4 +1,5 @@
-#   Challenge No. 3 Easy
+#  Challenge No. 3 Easy
+#  https://www.reddit.com/r/dailyprogrammer/comments/pkwb1/2112012_challenge_3_intermediate/
 
 import codecs
 
