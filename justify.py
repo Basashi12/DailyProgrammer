@@ -1,9 +1,8 @@
 # Challenge 15 Easy
+# https://www.reddit.com/r/dailyprogrammer/comments/q4c34/2242012_challenge_15_easy/
+# Write a program to left or right justify a text file
 
 # Somehow could not get ljust to work.  Used lstrip instead.
-
-def main():
-    pass
 
 def justify(text):
     maxlen = len(max(open(text, 'r'), key=len))
