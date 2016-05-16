@@ -26,3 +26,5 @@ def nugget(x):
     print(list((set(sample) - set(mnn))))
 
 # Simple multiplication faster in line 18 than using sum, zip, lambda
+# A = [j, k, l], B = [6, 9, 20]
+# sum(map(lambda i,j:i*j, A, B))
