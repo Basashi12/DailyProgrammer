@@ -1,4 +1,7 @@
 # Challenge no. 5 easy
+# https://www.reddit.com/r/dailyprogrammer/comments/pnhyn/2122012_challenge_5_easy/
+# Create a program which is password protected,
+# and wont open unless the correct user and password is given.
 
 import csv
 
