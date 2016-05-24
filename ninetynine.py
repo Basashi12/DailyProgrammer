@@ -1,3 +1,6 @@
+# DailyProgrammer Challenge 8 Easy
+# write a program that will print the song "99 bottles of beer on the wall."
+
 def ninetynine():
     for n in range(99,2,-1):
         print('{} bottles of beer on the wall, {} bottles of beer.  Take one down, pass it around, {} bottles of beer on the wall.'.format(n, n, n-1))
