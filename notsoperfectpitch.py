@@ -1,4 +1,6 @@
 # Challenge # 12 Difficult
+# https://www.reddit.com/r/dailyprogrammer/comments/pxsew/2202012_challenge_12_difficult/
+# Write a program which will take string inputs A-G and make the corresponding notes
 
 import winsound, time
 
@@ -27,6 +29,7 @@ def instrument():
     winsound.Beep(131, 435) 
     note = input('Which note should I play? ').upper()
     duration = int(input('How many miliseconds should the note be played? '))
+    # Works for A-G or Solfege
     if note == 'A' or note == 'LA':
         winsound.Beep(440, duration)
     elif note == 'B' or note == 'SI':
